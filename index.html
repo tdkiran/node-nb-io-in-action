@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node</title>
+</head>
+<body>
+    Node async in action
+    <script>
+      
+        fetch('http://localhost:8080/long')
+        .then(res => res.text())
+        .then(res => console.log(res))
+        .catch(i => console.log(i))
+
+        fetch('http://localhost:8080/short')
+        .then(res => res.text())
+        .then(res => console.log(res))
+        .catch(i => console.log(i))
+
+        fetch('http://localhost:8080/short')
+        .then(res => res.text())
+        .then(res => console.log(res))
+        .catch(i => console.log(i))
+
+        fetch('http://localhost:8080/short')
+        .then(res => res.text())
+        .then(res => console.log(res))
+        .catch(i => console.log(i))
+        </script>
+</body>
+</html>
